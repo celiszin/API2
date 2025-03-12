@@ -32,5 +32,8 @@ namespace EstoqueManager.Models
         [Required(ErrorMessage = "Informe O Nome Do Produto")]
         [StringLength(50, ErrorMessage = "O Nome Do Produto Deve Possuir No Maximo 50 Caracteres")]
         public string Nome { get; set; }
+
+        [Required(ErrorMessage = "Informe o Numero Do Produto")]
+        public int Numero { get; set; }
     }
 }
